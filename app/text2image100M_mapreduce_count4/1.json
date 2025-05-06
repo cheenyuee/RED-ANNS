@@ -1,0 +1,8 @@
+{
+    "metric":"IP",
+    "file_format": "bin",
+    "base_file": "/ann/data/text2image100M/mapreduce/count4/data/text2image100M1.fbin",
+    "graph_file": "/ann/data/text2image100M/mapreduce/count4/graph/1.vamana",
+    "query_file": "/ann/data/text2image100M/query.public.100K.fbin",
+    "gt_file": "/ann/data/text2image100M/gt100-public.100K.bin"
+}

@@ -1,0 +1,15 @@
+{
+    "metric": "L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/laion100M-512D/img_emb_0_100_no_8_nopadding.fbin",
+    "graph_file": "/ann/data/laion100M-512D/img_emb_0_100_no_8_nopadding.vamana",
+    "learn_data_file": "/ann/data/laion100M-512D/text_emb_0.30k.fbin",
+    "learn_graph_file": "/ann/data/laion100M-512D/text_emb_0.30k.vamana",
+    "learn_gt_file": "/ann/data/laion100M-512D/groundtruth.img0_100_no_8.100M.text_emb_0.30k.ibin",
+    "query_file": "/ann/data/laion100M-512D/text_emb_101.10k_nopadding.fbin",
+    "gt_file": "/ann/data/laion100M-512D/groundtruth.img0_100_no_8.100M.text_emb_101.10k.ibin",
+    "bkmeans_K": "4",
+    "bkmeans_centroids_output_file": "/ann/data/laion100M-512D/laion100M.bkmeans_centroids.txt",
+    "bucket_count": "4",
+    "filename_prefix": "./data/laion100M"
+}

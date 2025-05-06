@@ -1,0 +1,8 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/msturing100M/mapreduce/count4/data/msturing100M2.fbin",
+    "graph_file": "/ann/data/msturing100M/mapreduce/count4/graph/2.vamana",
+    "query_file": "/ann/data/msturing100M/query100K.fbin",
+    "gt_file": "/ann/data/msturing100M/gt100-public100K-queries.bin"
+}

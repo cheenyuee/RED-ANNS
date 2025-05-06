@@ -1,0 +1,18 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/deep100M/base.1B.fbin.crop_nb_100000000",
+    "graph_file": "/ann/data/deep100M/deep100M.vamana",
+    "learn_data_file":"/ann/data/deep100M/query.heldout.30K.fbin",
+    "learn_graph_file":"/ann/data/deep100M/query.heldout.30K.vamana",
+    "learn_gt_file":"/ann/data/deep100M/gt100-heldout.30K.bin",
+    "query_file": "/ann/data/deep100M/query.public.10K.fbin",
+    "gt_file": "/ann/data/deep100M/gt100-public.10K.bin",
+    "K":"10",
+    "L":"100",
+    "T":"1",
+    "bkmeans_K": "4",
+    "bkmeans_centroids_output_file": "/ann/data/deep100M/deep10M_K4.bkmeans_centroids.txt",
+    "bucket_count": "4",
+    "filename_prefix": "./data/deep100M"
+}

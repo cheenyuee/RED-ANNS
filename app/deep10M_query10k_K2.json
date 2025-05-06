@@ -1,0 +1,20 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/home/cy/data/deep10M/deep10M.fbin",
+    "graph_file": "/home/cy/data/deep10M/deep10M.nsg",
+    "learn_data_file":"/home/cy/data/deep10M/AepANNentry_points.fbin",
+    "learn_graph_file":"/home/cy/data/deep10M/AepANNentry_points.nsg",
+    "learn_gt_file":"/home/cy/data/deep10M/AepANNentry_points_gt100.ibin",
+    "query_file": "/home/cy/data/deep10M/deep10M_queries.fbin",
+    "gt_file": "/home/cy/data/deep10M/deep10M_groundtruth.ibin",
+    "K":"10",
+    "L":"100",
+    "T":"1",
+    "bkmeans_K": "2",
+    "bkmeans_input_file": "/home/cy/data/deep10M/deep10M.bkmeans_input.txt",
+    "bkmeans_labels_output_file": "/home/cy/data/deep10M/deep10M.bkmeans_labels.txt",
+    "bkmeans_centroids_output_file": "/home/cy/data/deep10M/deep10M.bkmeans_centroids.txt",
+    "bucket_count": "2",
+    "filename_prefix": "./data/deep10M"
+}

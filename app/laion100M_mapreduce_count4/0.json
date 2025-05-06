@@ -1,0 +1,8 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/laion100M-512D/mapreduce/count4/data/laion100M-512D0.fbin",
+    "graph_file": "/ann/data/laion100M-512D/mapreduce/count4/graph/0.vamana",
+    "query_file": "/ann/data/laion100M-512D/text_emb_101.10k_nopadding.fbin",
+    "gt_file": "/ann/data/laion100M-512D/groundtruth.img0_100_no_8.100M.text_emb_101.10k.ibin"
+}

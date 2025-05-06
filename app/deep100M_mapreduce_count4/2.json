@@ -1,0 +1,11 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/deep100M/mapreduce/count4/data/deep100M2.fbin",
+    "graph_file": "/ann/data/deep100M/mapreduce/count4/graph/2.vamana",
+    "query_file": "/ann/data/deep100M/query.public.10K.fbin",
+    "gt_file": "/ann/data/deep100M/gt100-public.10K.bin",
+    "K":"10",
+    "L":"100",
+    "T":"1"
+}

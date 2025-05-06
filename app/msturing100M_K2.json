@@ -1,0 +1,18 @@
+{
+    "metric":"L2",
+    "file_format": "bin",
+    "base_file": "/ann/data/msturing100M/base1b.fbin.crop_nb_100000000",
+    "graph_file": "/ann/data/msturing100M/msturing100M.vamana",
+    "learn_data_file":"/ann/data/msturing100M/testQuery10K.fbin",
+    "learn_graph_file":"/ann/data/msturing100M/testQuery10K.vamana",
+    "learn_gt_file":"/ann/data/msturing100M/gt100-private10K-queries.bin",
+    "query_file": "/ann/data/msturing100M/query100K.fbin",
+    "gt_file": "/ann/data/msturing100M/gt100-public100K-queries.bin",
+    "K":"10",
+    "L":"100",
+    "T":"1",
+    "bkmeans_K": "2",
+    "bkmeans_centroids_output_file": "/ann/data/msturing100M/msturing_K2.bkmeans_centroids.txt",
+    "bucket_count": "2",
+    "filename_prefix": "./data/msturing100M_K2"
+}
