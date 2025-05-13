@@ -1,8 +1,10 @@
 # RED-ANNS
 
-### 机器配置
+To enable RDMA communication, we referred to the RDMA communication code implementation in the [Wukong Project](http://ipads.se.sjtu.edu.cn/projects/wukong) and ported it to the RoCE network.
 
-安装依赖
+### Environment Configuration
+
+Install Dependencies
 
 ```shell
 sudo apt install numactl
@@ -10,7 +12,7 @@ sudo apt-get install libboost-all-dev
 sudo apt-get install openmpi-bin openmpi-common libopenmpi-dev
 ```
 
-下载 boost_1_85_0.tar.gz https://www.boost.org/users/history/version_1_85_0.html
+download boost_1_85_0.tar.gz https://www.boost.org/users/history/version_1_85_0.html
 
 ```shell
 wget https://archives.boost.io/release/1.85.0/source/boost_1_85_0.tar.gz
@@ -21,15 +23,15 @@ cd boost_1_85_0
 sudo ./b2 install
 ```
 
-配置当前shell所在机器到其他机器的ssh免密登录(包括自己到自己到免密登录)，方便使用rsync
+Configure passwordless SSH access from the machine running the current shell to other hosts (including to itself), to facilitate using rsync.
 
-解除所有机器的最大锁定内存限制
+Remove the maximum locked memory limit on all machines.
 
-配置网络接口的MTU
+Configure the MTU of the network interface
 
-### 项目配置
+### Project Configuration
 
-在 hosts 文件中设置 server ip 地址（注意末尾也要有换行）
+Set the server IP address in the hosts file (make sure there is also a newline at the end).
 
 ```c
 10.176.24.160
@@ -37,7 +39,7 @@ sudo ./b2 install
 
 ```
 
-在 hosts.mpi 文件中设置 server ip 地址（注意末尾也要有换行）
+Set the server IP address in the hosts.mpi file (ensure there is a newline at the end of the file).
 
 ```c
 10.176.24.160 slots=1
@@ -45,7 +47,7 @@ sudo ./b2 install
 
 ```
 
-在 global.hpp 中设置存储层相关参数，包括最大 server 数量和最大 thread 数量
+Set the storage layer-related parameters in global.hpp, including the maximum number of servers and the maximum number of threads.
 
 ```c
 int Global::num_servers = 2;
@@ -55,19 +57,19 @@ int Global::rdma_buf_size_mb = 64;
 int Global::memstore_size_gb = 20;
 ```
 
-配置.json参数文件，并在 test 中加载相应参数
+Configure the .json parameter file and load the corresponding parameters in the test.
 
 ```c
 para.LoadConfigFromJSON("./deep10M.json");
 ```
 
-编译构建
+Compile and Build
 
 ```shell
 bash build.sh
 ```
 
-分布式运行
+Run
 
 ```shell
 bash sync.sh && bash run.sh
