@@ -1,6 +1,6 @@
 # RED-ANNS
 
-To enable RDMA communication, we referred to the RDMA communication code implementation in the [Wukong Project](http://ipads.se.sjtu.edu.cn/projects/wukong) and ported it to the RoCE network.
+To enable RDMA communication, we referred to the RDMA communication code implementation in the [Wukong Project](https://github.com/SJTU-IPADS/wukong) and ported it to the RoCE network.
 
 ### Environment Configuration
 
